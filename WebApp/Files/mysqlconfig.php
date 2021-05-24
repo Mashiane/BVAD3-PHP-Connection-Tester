@@ -1,7 +1,7 @@
 <?php
-const DB_HOST = '';
-const DB_NAME = '';
-const DB_USER = '';
+const DB_HOST = 'localhost';
+const DB_NAME = 'bananocvc';
+const DB_USER = 'root';
 const DB_PASS = '';
 const DB_PORT = 3306;
 ?>
