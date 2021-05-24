@@ -34,7 +34,7 @@ End Sub
 'when the instance is mounted
 Sub onmounted
 	Dim rsTables As BANanoMySQLE
-	rsTables.Initialize("7090761_wordpress_6", "", "", "")
+	rsTables.Initialize("dbname", "", "", "")
 	rsTables.GetTableNames
 	rsTables.JSON = BANano.CallInlinePHPWait(rsTables.MethodName, rsTables.Build)
 	rsTables.FromJSON

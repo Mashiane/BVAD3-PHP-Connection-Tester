@@ -111,7 +111,6 @@ Sub AppStart (Form1 As Form, Args() As String)
 		'exclude the port address
 		'ServerIP = "http://www.localhost:8080"
 	#end if
-	ServerIP = "https://www.vpsolutions.es"
 	ServerIP = "https://localhost"
 	BANano.PHPHost = $"${ServerIP}/${AppName}/"$
 	BANano.PHPAddHeader("Access-Control-Allow-Origin: *")
