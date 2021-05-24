@@ -43,6 +43,7 @@ Sub onmounted
 	Dim strError As String = rsTables.Error
 		Log(strError)
 		vuetify.ShowSwalError(strError)
+		Return
 	Return
 	End Select
 	Dim totTables As Int = rsTables.result.size
