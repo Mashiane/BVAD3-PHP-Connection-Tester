@@ -40,11 +40,10 @@ Sub onmounted
 	rsTables.FromJSON
 	Select Case rsTables.OK
 	Case False
-	Dim strError As String = rsTables.Error
+		Dim strError As String = rsTables.Error
 		Log(strError)
 		vuetify.ShowSwalError(strError)
 		Return
-	Return
 	End Select
 	Dim totTables As Int = rsTables.result.size
 	vuetify.ShowSwalSuccess($"${totTables} table(s) have been found on your database."$)
